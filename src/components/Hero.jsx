@@ -18,7 +18,7 @@ function Hero() {
           </p>
 
           <h1 className="text-6xl font-bold leading-tight">
-            Anil <span className="text-cyan-400">Yadav</span>
+            Anil <span className="text-cyan-400">Kumar</span>
           </h1>
 
           <h2 className="text-2xl text-gray-300 mt-5">
