@@ -35,8 +35,10 @@ function About() {
 
             <br /><br />
 
-            My goal is to become a Software Engineer at a top product-based company
-            and build impactful applications that solve real-world problems.
+            My goal is to build a successful career as a Software Engineer in a reputed
+IT company. I am continuously improving my skills in Full Stack Development,
+Java, Python and problem-solving to contribute to real-world software
+solutions while learning and growing as a professional developer.
 
           </p>
 
