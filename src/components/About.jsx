@@ -14,7 +14,7 @@ function About() {
 
           <p className="text-lg leading-9 text-gray-300">
 
-            Hello! I'm <span className="text-cyan-400 font-semibold">Anil Yadav</span>,
+            Hello! I'm <span className="text-cyan-400 font-semibold">Anil Kumar</span>,
             a B.Tech Information Technology student at
             <span className="text-cyan-400"> RR Institute of Modern Technology, Lucknow.</span>
 

@@ -11,7 +11,7 @@ function Footer() {
 
           <div>
             <h2 className="text-3xl font-bold text-cyan-400">
-              Anil Yadav
+              Anil Kumar
             </h2>
 
             <p className="text-gray-400 mt-2">
@@ -52,7 +52,7 @@ function Footer() {
         <hr className="my-8 border-gray-700" />
 
         <p className="text-center text-gray-400 flex justify-center items-center gap-2">
-          Made with <FaHeart className="text-red-500" /> by Anil Yadav
+          Made with <FaHeart className="text-red-500" /> by Anil Kumar
         </p>
 
         <p className="text-center text-gray-500 mt-3">
