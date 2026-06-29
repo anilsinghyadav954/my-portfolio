@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import {
   FaEnvelope,
   FaPhone,
@@ -8,6 +11,29 @@ import {
 import { SiLeetcode } from "react-icons/si";
 
 function Contact() {
+  const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_26a55zq",
+      "template_xcmpcpl",
+      form.current,
+      "0le5IJvnHNuy7JYhk"
+    )
+    .then(
+      () => {
+        alert("Message Sent Successfully!");
+        form.current.reset();
+      },
+      (error) => {
+        alert(error.text||error.message);
+        console.log(error);
+      }
+    );
+};
   return (
     <section
       id="contact"
@@ -76,27 +102,31 @@ function Contact() {
 
           </div>
 
-          <form className="space-y-5">
+          <form ref={form} onSubmit={sendEmail} className="space-y-5">
 
             <input
               type="text"
+              name="user_name"
               placeholder="Your Name"
               className="w-full p-4 rounded-xl bg-gray-900 border border-cyan-500 outline-none"
             />
 
             <input
               type="email"
+              name="user_email"
               placeholder="Your Email"
               className="w-full p-4 rounded-xl bg-gray-900 border border-cyan-500 outline-none"
             />
 
             <textarea
+              name="message"
               rows="6"
               placeholder="Your Message"
               className="w-full p-4 rounded-xl bg-gray-900 border border-cyan-500 outline-none"
             ></textarea>
 
             <button
+              type="submit"
               className="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-xl font-semibold transition"
             >
               Send Message
